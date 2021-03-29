@@ -1,0 +1,98 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>dcacd40d-bf3b-47aa-bc14-7a15f3749daa</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>AttendanceManagement.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>AttendanceManagement</Name>
+    <RootNamespace>AttendanceManagement</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AttendanceManagement.py" />
+    <Compile Include="ApplicationTool.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FaceRecognize.py" />
+    <Compile Include="nlp.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\face_img_database\" />
+    <Folder Include="Export\" />
+    <Folder Include="Picture\" />
+    <Folder Include="Classifiers\" />
+    <Folder Include="Data\" />
+    <Folder Include="Picture\Wait\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classifiers\cnn_face_emotion.hdf5" />
+    <Content Include="Classifiers\dlib_face_recognition_model.dat" />
+    <Content Include="Classifiers\haarcascade_frontalface_alt.xml" />
+    <Content Include="Classifiers\haarcascade_frontalface_alt2.xml" />
+    <Content Include="Classifiers\haarcascade_frontalface_alt_tree.xml" />
+    <Content Include="Classifiers\haarcascade_frontalface_default.xml" />
+    <Content Include="Classifiers\shape_predictor_face_landmarks.dat" />
+    <Content Include="Picture\addfacedata.png" />
+    <Content Include="Picture\addpunchcardinfo_month.png" />
+    <Content Include="Picture\addpunchcardinfo_year.png" />
+    <Content Include="Picture\attendance.png" />
+    <Content Include="Picture\bmp.png" />
+    <Content Include="Picture\closeloglist.png" />
+    <Content Include="Picture\initdata.png" />
+    <Content Include="Picture\download_loglist.png" />
+    <Content Include="Picture\fail.png" />
+    <Content Include="Picture\holder.png" />
+    <Content Include="Picture\about.png" />
+    <Content Include="Picture\exportloglist.png" />
+    <Content Include="Picture\introduce.png" />
+    <Content Include="Picture\leave.png" />
+    <Content Include="Picture\openloglist_complex.png" />
+    <Content Include="Picture\settingleavetime.png" />
+    <Content Include="Picture\openloglist_simple.png" />
+    <Content Include="Picture\punchcard.png" />
+    <Content Include="Picture\register.png" />
+    <Content Include="Picture\repeat.png" />
+    <Content Include="Picture\screen.png" />
+    <Content Include="Picture\service_close.png" />
+    <Content Include="Picture\service_start.png" />
+    <Content Include="Picture\settingtime.png" />
+    <Content Include="Picture\showemployee.png" />
+    <Content Include="Picture\showtimeinfo.png" />
+    <Content Include="Picture\success.png" />
+    <Content Include="Picture\upload_loglist.png" />
+    <Content Include="Picture\Wait\0.png" />
+    <Content Include="Picture\Wait\1.png" />
+    <Content Include="Picture\Wait\2.png" />
+    <Content Include="Picture\Wait\3.png" />
+    <Content Include="Picture\Wait\4.png" />
+    <Content Include="Picture\Wait\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

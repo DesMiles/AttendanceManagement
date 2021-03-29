@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AttendanceManagement", "AttendanceManagement\AttendanceManagement.pyproj", "{DCACD40D-BF3B-47AA-BC14-7A15F3749DAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCACD40D-BF3B-47AA-BC14-7A15F3749DAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCACD40D-BF3B-47AA-BC14-7A15F3749DAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF4531D9-EA16-4B8A-870F-4E9762B0C8FE}
+	EndGlobalSection
+EndGlobal
